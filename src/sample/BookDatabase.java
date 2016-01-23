@@ -26,16 +26,27 @@ public class BookDatabase {
 
         while (in.hasNext())
         {
-
+            /*
             String bookID = in.next();
             bookID = bookID.split(",")[0];
             String bookName = in.next();
             bookName = bookName.split(",")[0];
+            */
+
+            String entryString = in.nextLine();
+
+            String[] myStrings = entryString.split(", ");
+            String bookID = myStrings[0];
+            String bookName = myStrings[1];
+            float bookPrice = Float.parseFloat(myStrings[2]);
+
+            //System.out.println(bookID + " " + bookName + " " + bookPrice);
             /*
-            String bookID = in.next("^[0-9]+");
-            String bookName = in.next("\"[A-Za-z0-9 ]+\"");
+            String bookID = in.next("^[0-9]+,");
+            String bookName = in.next("\"[A-Za-z0-9 ]+\",");
             float bookPrice = Float.parseFloat( in.next("[0-9]*.?[0-9]+$") );
             */
+            System.out.println("book added");
             bookArray.add(new BookEntry(bookID, bookName, bookPrice));
 
 

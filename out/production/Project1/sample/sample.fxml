@@ -15,7 +15,7 @@
       <Button fx:id="newBtn" layoutX="424.0" layoutY="160.0" mnemonicParsing="false" onAction="#newOrder" text="New Order" />
       <Button fx:id="exitBtn" layoutX="504.0" layoutY="160.0" mnemonicParsing="false" onAction="#exitApp" text="Exit" />
       <Label layoutX="95.0" layoutY="18.0" text="Enter number of items in this order:" />
-      <TextField fx:id="orderBox" layoutX="287.0" layoutY="14.0" onAction="#updateOrderItems" onMouseReleased="#updateOrderItems" prefHeight="25.0" prefWidth="274.0" />
+      <TextField fx:id="orderBox" layoutX="287.0" layoutY="14.0" prefHeight="25.0" prefWidth="274.0" />
       <TextField layoutX="287.0" layoutY="39.0" prefHeight="25.0" prefWidth="274.0" />
       <TextField layoutX="287.0" layoutY="64.0" prefHeight="25.0" prefWidth="274.0" />
       <TextField fx:id="infoBox" disable="true" layoutX="287.0" layoutY="89.0" prefHeight="25.0" prefWidth="274.0" />
