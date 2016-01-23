@@ -1,8 +1,28 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="206.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="processBtn" layoutX="32.0" layoutY="160.0" mnemonicParsing="false" onAction="#processItem" prefHeight="25.0" prefWidth="103.0" text="Process Item #1" />
+      <Button fx:id="confirmBtn" disable="true" layoutX="142.0" layoutY="160.0" mnemonicParsing="false" onAction="#confirmItem" text="Confirm Item #1" />
+      <Button fx:id="viewBtn" disable="true" layoutX="252.0" layoutY="160.0" mnemonicParsing="false" onAction="#view" text="View Order" />
+      <Button fx:id="finishBtn" disable="true" layoutX="336.0" layoutY="160.0" mnemonicParsing="false" onAction="#finishOrder" text="Finish Order" />
+      <Button fx:id="newBtn" layoutX="424.0" layoutY="160.0" mnemonicParsing="false" onAction="#newOrder" text="New Order" />
+      <Button fx:id="exitBtn" layoutX="504.0" layoutY="160.0" mnemonicParsing="false" onAction="#exitApp" text="Exit" />
+      <Label layoutX="95.0" layoutY="18.0" text="Enter number of items in this order:" />
+      <TextField fx:id="orderBox" layoutX="287.0" layoutY="14.0" onAction="#updateOrderItems" onMouseReleased="#updateOrderItems" prefHeight="25.0" prefWidth="274.0" />
+      <TextField layoutX="287.0" layoutY="39.0" prefHeight="25.0" prefWidth="274.0" />
+      <TextField layoutX="287.0" layoutY="64.0" prefHeight="25.0" prefWidth="274.0" />
+      <TextField fx:id="infoBox" disable="true" layoutX="287.0" layoutY="89.0" prefHeight="25.0" prefWidth="274.0" />
+      <TextField disable="true" layoutX="287.0" layoutY="114.0" prefHeight="25.0" prefWidth="274.0" />
+      <Label fx:id="IDLabel" layoutX="143.0" layoutY="43.0" text="Enter Book ID for Item #1:" />
+      <Label fx:id="quantityLabel" layoutX="142.0" layoutY="68.0" text="Enter quantity for Item #1:" />
+      <Label fx:id="infoLabel" layoutX="211.0" layoutY="95.0" text="Item #1 info:" />
+      <Label fx:id="subtotalLabel" layoutX="142.0" layoutY="118.0" text="Order subtotal for 0 items:" />
+   </children>
+</AnchorPane>
