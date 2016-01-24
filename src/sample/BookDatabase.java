@@ -1,5 +1,6 @@
 package sample;
 
+import java.awt.print.Book;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -57,6 +58,16 @@ public class BookDatabase {
     public static ArrayList<BookEntry> getBooks()
     {
         return bookArray;
+    }
+
+    public static BookEntry search(String id)
+    {
+        for (BookEntry book : bookArray)
+        {
+            if (book.getBookID().equals(id))
+                return book;
+        }
+        return null;
     }
 
     public static void printBooks()

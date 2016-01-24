@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Book Store");
         primaryStage.setScene(new Scene(root, 571, 206));
         primaryStage.show();
     }
@@ -19,7 +19,7 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         BookDatabase.generate("inventory.txt");
-        BookDatabase.printBooks();
+        //BookDatabase.printBooks();
         launch(args);
     }
 }
