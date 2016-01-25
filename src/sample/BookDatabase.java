@@ -6,9 +6,13 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- * Created by Sledd on 1/23/2016.
- */
+/*
+    Name: Daniel Sledd
+    Course: CNT 4714 – Spring 2016
+    Assignment title: Program 1 – Event-driven Programming
+    Date: Sunday January 24, 2016
+*/
+
 public class BookDatabase {
 
     static ArrayList<BookEntry> bookArray;
